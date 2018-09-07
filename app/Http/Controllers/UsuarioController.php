@@ -61,6 +61,7 @@ class UsuarioController extends Controller
     public function show(Usuario $usuario)
     {
         return view('usuarios.show',compact('usuario'));
+        //return $usuario;
     }
 
     /**
@@ -84,8 +85,9 @@ class UsuarioController extends Controller
     public function update(Request $request, Usuario $usuario)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'nombre' => 'required',
+            'paterno' => 'required',
+            'materno' => 'required',
         ]);
   
         $usuario->update($request->all());

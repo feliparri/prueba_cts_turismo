@@ -1,3 +1,23 @@
+
+## PRUEBA CTS TURISMO
+
+# apis rest
+
+{{host}}:port/api/muestraTodo         — muestra todos los registros
+{{host}}:port/api/muestraPorId/{id}   — muestra el registro por id
+{{host}}:port/api/actualizarRegistro/{id}/{nombre}/{paterno}/{materno}/{comentario} - actualiza registro en bd
+{{host}}:port/api/crearRegistro/{nombre}/{paterno}/{materno}/{comentario}. 			- crea registro en bd
+{{host}}:port/api/borrar/{id}		  - borrar a traves del id del registro
+
+# INICIO DE SESION
+En el inicio de sesion puede registrarse o usar las siguientes credenciales
+-user : felipe.huerta.iturra@gmail.com
+-pass : 123456
+
+Esto lo llevara a la pantalla principal la cual muestra la lista de usuarios. Estos usuarios poseen acciones como editar, mostrar o eliminar, ademas de poder crear un registro nuevo
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

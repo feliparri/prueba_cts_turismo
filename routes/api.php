@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('muestraTodo', 'Api\UsuarioController@muestraTodo');
+Route::get('muestraPorId/{id}', 'Api\UsuarioController@muestraPorId');
+Route::get('borrar/{id}', 'Api\UsuarioController@borrar');
+Route::get('crearRegistro/{nombre}/{paterno}/{materno}/{comentario}', 'Api\UsuarioController@crearRegistro');
+Route::get('actualizarRegistro/{id}/{nombre}/{paterno}/{materno}/{comentario}', 'Api\UsuarioController@actualizarRegistro');
