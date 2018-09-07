@@ -13,15 +13,12 @@
 
 
 
-Route::get('/', function () {return view('auth.login');});
+
+Route::get('/', function () {return view('home');})->middleware('auth');
 Route::get('/usuarios', function () {return view('usuarios.index');});
 Route::get('/home', function () {return view('home');})->middleware('auth');
 
 
 Route::resource('usuarios','UsuarioController')->middleware('auth');
-//Route::resource('usuarios/crearByApi','UsuarioController')->middleware('auth');
+
 Auth::routes();
-
-//Route::post('/usuarios/crearByApi', 'UsuarioController@crearByApi');
-
-//Route::get('/home', 'HomeController@index')->name('home');

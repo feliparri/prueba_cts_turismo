@@ -1,6 +1,17 @@
 
 ## PRUEBA CTS TURISMO
 
+# Test Unitarios de API
+ * ruta : test/Features/apiModuleTest.php
+ * metodos: 
+ 	- test_llega_a_login
+	- test_api_crear
+	- test_api_actualizar
+	- test_api_borrar
+	- test_api_mostrar_todo
+	- test_api_mostrar_por_id
+
+
 # apis rest
 
 {{host}}:port/api/muestraTodo         — muestra todos los registros
